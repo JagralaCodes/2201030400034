@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet - Donate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .donate,
+        .gallery {
+            margin-bottom: 40px;
+        }
+
+        .donate h2,
+        .gallery h2 {
+            margin-bottom: 10px;
+        }
+
+        .amount-buttons {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .gyan {
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form label,
+        form input,
+        form button {
+            margin: 5px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(32, 33, 36);
+            font-family: Google Sans, Roboto, Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: normal;
+            line-height: 32px;
+
+        }
+
+        .image-container img {
+            width: 500px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .gg {
+            text-align: center;
+        }
+
+        .gyan2 {
+            font-family: Google Sans Text, Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: .1px;
+            line-height: 24px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="#">Virtual Pet</a></div>
+                <ul class="menu">
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="Deshboard.html">Adoption</a></li>
+                    <li><a href="Contect.html">Contact</a></li>
+                    <li><a href="Registration.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Help Feed and Care for Stray Animals</h1>
+    <main>
+        <section class="gallery">
+            <h2>Meet Some of Our Friends</h2>
+            <div class="image-container">
+                <img src="images/feedpet1.jpg" alt="Helping a cat" />
+                <img src="images/feedpet2.jpg" alt="Helping a dogs">
+            </div>
+        </section>
+        <section class="donate">
+            <h2>Make a Donation</h2>
+            <p class="gyan">Your contribution will help us provide food, shelter, and medical care to stray animals in
+                need.</p>
+            <div class="amount-buttons">
+                <button onclick="donate(10)">₹10</button>
+                <button onclick="donate(100)">₹100</button>
+                <button onclick="donate(500)">₹500</button>
+            </div>
+            <form id="custom-donation">
+                <label for="custom-amount">Custom Amount (₹)</label>
+                <input type="number" id="custom-amount" name="custom-amount" min="1" step="1" required>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+        <div class="gg">
+            <h3>We Do it for the Love of Animals!</h3>
+            <br>
+            <span></span>
+            <p class="gyan2">Caring for street animals is vital as they often face neglect, hunger, and health issues in
+                urban environments.
+                By providing them with food, shelter, and medical attention, we offer them a chance at a better life.
+                Additionally,
+                taking care of street animals contributes to public health by reducing the spread of diseases and
+                promotes compassion
+                and empathy within society. Each act of kindness towards these animals not only improves their
+                well-being but also
+                enriches our communities with a sense of humanity and responsibility.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>Together, we can make a difference in the lives of stray animals.</p>
+    </footer>
+</body>
+
+</html>
